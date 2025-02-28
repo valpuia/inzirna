@@ -21,8 +21,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        if (Schema::hasTable('scripts')) {
-            View::share('shareScripts', \App\Models\Script::first()?->script);
-        }
+        // if (Schema::hasTable('scripts')) {
+        //     View::share('shareScripts', \App\Models\Script::first()?->script);
+        // }
     }
 }
